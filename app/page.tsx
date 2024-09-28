@@ -1,6 +1,7 @@
 import Button1 from './Components/ui/Button1'
 import TechnologyCards from './Components/ui/TechnologyCards'
 import SocialLinks from './Components/ui/SocialLinks'
+import ProyectCards from './Components/ui/ProyectCards'
 import { fjallaOne, montserrat, pacifico} from './fonts/fonts';
 import Image from 'next/image';
 import profile from './Components/Pictures/profilepic3.jpg'
@@ -42,10 +43,10 @@ export default function Home() {
         {/*-------------------- SOBRE MI --------------------*/}
 
 
-        <section className='my-4 w-full flex flex-col text-texto2 border border-components1 rounded-lg shadow-md'>
-          <div className='p-4 w-full rounded-xl text-2xl font-bold'>
-            <h1 className=''>About me<span className='text-nombre1'>.</span></h1>
-            <p className='text-lg'>¡Hola! Soy un apasionado de la programación y estudiante de Ingeniería Industrial, con un enfoque en el desarrollo web. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer tanto personal como profesionalmente. A lo largo de mi formación, he desarrollado proyectos utilizando React y Next.js, lo que me ha ayudado a mejorar mis habilidades en el frontend, y actualmente estoy expandiendo mis conocimientos en el backend, explorando tecnologías como Node.js y Express.
+        <section className='my-8 w-full flex flex-col text-texto2'>
+          <div className='w-full font-bold'>
+            <h1 className='mb-4 text-2xl'>About me<span className='text-nombre1'>.</span></h1>
+            <p className='text-md font-semibold'>¡Hola! Soy un apasionado de la programación y estudiante de Ingeniería Industrial, con un enfoque en el desarrollo web. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer tanto personal como profesionalmente. A lo largo de mi formación, he desarrollado proyectos utilizando React y Next.js, lo que me ha ayudado a mejorar mis habilidades en el frontend, y actualmente estoy expandiendo mis conocimientos en el backend, explorando tecnologías como Node.js y Express.
             </p>
           </div>
         </section>
@@ -54,18 +55,22 @@ export default function Home() {
         {/*-------------------- PROYECTOS --------------------*/} <div className='divider'></div>
 
 
-        <section className='mb-4 w-full flex flex-col text-texto2 border border-components1 rounded-lg shadow-md'>
-          <div className='p-4 w-full h-[400px] rounded-xl text-2xl font-bold'>
-            <h1 className=''>Proyectos<span className='text-nombre1'>.</span></h1>
-          </div>
+        <section className='my-8 gap-8 w-full flex flex-col text-texto2 border-components1'>
+
+          <h1 className='text-2xl font-bold'>Proyectos<span className='text-nombre1'>.</span></h1>
+          <ProyectCards />
+
         </section>
 
 
         {/*-------------------- TECNOLOGÍAS --------------------*/} <div className='divider'></div>
 
 
-        <section className='gap-4 w-full flex flex-col items-center justify-center text-texto2 font-semibold'>
-          <h1 className='text-3xl font-bold'>Tecnologías<span className='text-nombre1'>.</span></h1>
+        <section className='my-8 gap-4 w-full flex flex-col items-center justify-center text-texto2 font-semibold'>
+          <div className='flex text-start'>
+            <h1 className='text-3xl font-bold'>Tecnologías<span className='text-nombre1'>.</span></h1>
+          </div>
+          
           <TechnologyCards />
         </section>
 
@@ -73,7 +78,7 @@ export default function Home() {
         {/*-------------------- CONTACTO --------------------*/} <div className='divider'></div>
 
 
-        <section className='my-4 w-full flex flex-col text-texto2 border border-components1 rounded-lg shadow-md'>
+        <section className='my-8 w-full flex flex-col text-texto2 border border-components1 rounded-lg shadow-md'>
           <div className='p-4 w-full rounded-xl text-2xl font-bold'>
             <h1 className=''>Contact me<span className='text-nombre1'>.</span></h1>
           </div>
