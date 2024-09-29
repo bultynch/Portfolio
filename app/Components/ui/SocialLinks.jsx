@@ -7,7 +7,7 @@ function SocialLinks() {
   return (
     <div className='gap-2 flex items-center justify-center'>
         <button className='text-components1 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:text-texto2'>
-            <Link href='https://www.instagram.com/franbultynch/'>
+            <Link href='https://www.linkedin.com/in/francisco-bultynch-78a717225/'>
                 <FaLinkedinIn className='w-6 h-6'/>
             </Link>
         </button>

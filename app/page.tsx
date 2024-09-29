@@ -11,7 +11,13 @@ export default function Home() {
   return (
     <div className="bg-bg1 flex flex-col items-center justify-center">
 
-      <div className='gap-y-40 px-4 sm:px-10 lg:px-0 w-full lg:w-[900px] '>
+      <div className='gap-y-40
+                      px-4
+                      sm:px-10
+                      md:px-20
+                      lg:px-0
+                      w-full
+                      lg:w-[850px]'>
 
 
         {/*-------------------- NOMBRE Y PERFIL --------------------*/}
@@ -39,13 +45,12 @@ export default function Home() {
 
         </section>
 
-
         {/*-------------------- SOBRE MI --------------------*/}
 
 
         <section className='my-8 w-full flex flex-col text-texto2'>
           <div className='w-full font-bold'>
-            <h1 className='mb-4 text-2xl'>About me<span className='text-nombre1'>.</span></h1>
+            <h1 className='mb-4 text-2xl'>Sobre mi<span className='text-nombre1'>.</span></h1>
             <p className='text-md font-semibold'>¡Hola! Soy un apasionado de la programación y estudiante de Ingeniería Industrial, con un enfoque en el desarrollo web. Me encanta aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer tanto personal como profesionalmente. A lo largo de mi formación, he desarrollado proyectos utilizando React y Next.js, lo que me ha ayudado a mejorar mis habilidades en el frontend, y actualmente estoy expandiendo mis conocimientos en el backend, explorando tecnologías como Node.js y Express.
             </p>
           </div>
@@ -73,6 +78,8 @@ export default function Home() {
           
           <TechnologyCards />
         </section>
+
+        
 
 
         {/*-------------------- CONTACTO --------------------*/} <div className='divider'></div>

@@ -9,11 +9,11 @@ import pcstore from '../Pictures/pcStore.png'
 function ProyectCards() {
   return (
     <div className=''>
-      <article className="mb-4 w-full flex md:items-center rounded-lg shadow-md border border-components1 bg-bg1">
+      <article className="mb-4 w-full flex flex-col md:flex-row rounded-lg shadow-md border border-components1 bg-bg1">
 
         <div className='w-full h-60 rounded-t-lg md:rounded-l-lg md:rounde-r-none'>
           <Image src={pcstore} alt='pcstore' width={200} height={100} className='w-full h-full rounded-t-lg'/>
-        </div>    
+        </div>
 
         <div className="p-4 flex flex-col text-texto2">
           <h1 className="text-2xl font-bold">Proyect Computer Store</h1>
@@ -23,7 +23,7 @@ function ProyectCards() {
 
             <div className='flex items-center justify-center'>
               <Link href={'https://github.com/bultynch'}>
-                <button className='gap-2 p-2 flex items-center bg-[#2b3137] text-texto1 text-sm font-semibold rounded-lg shadow-sm border border-[#24292e] transform transition-transform duration-300 ease-in-out hover:scale-105'>Github<FaGithub className='w-4 h-4'/></button>
+                <button className='gap-2 p-2 flex items-center bg-[#2b3137] text-texto1 text-sm font-semibold rounded-lg shadow-sm border border-[#24292e] transform transition-transform duration-300 ease-in-out hover:scale-105'>Github<FaGithub className='w-4 h-4 mb-0.5'/></button>
               </Link>
             </div>
             
@@ -63,8 +63,8 @@ function ProyectCards() {
           <div className='gap-2 text-sm flex items-center justify-start'>
 
             <div className='flex items-center justify-center'>
-              <Link href={'https://github.com/bultynch'}>
-                <button className='gap-2 p-2 flex items-center bg-[#2b3137] text-texto1 text-sm font-semibold rounded-lg shadow-sm border border-[#24292e] transform transition-transform duration-300 ease-in-out hover:scale-105'>Github<FaGithub className='w-4 h-4'/></button>
+            <Link href={'https://github.com/bultynch'}>
+                <button className='gap-2 p-2 flex items-center bg-[#2b3137] text-texto1 text-sm font-semibold rounded-lg shadow-sm border border-[#24292e] transform transition-transform duration-300 ease-in-out hover:scale-105'>Github<FaGithub className='w-4 h-4 mb-0.5'/></button>
               </Link>
             </div>
             
