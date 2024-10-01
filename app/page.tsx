@@ -5,6 +5,7 @@ import ProyectCards from './Components/ui/ProyectCards'
 import { fjallaOne, montserrat, pacifico} from './fonts/fonts';
 import Image from 'next/image';
 import profile from './Components/Pictures/profilepic3.jpg'
+import NavBar from './Components/ui/NavBar'
 
 
 export default function Home() {
@@ -18,6 +19,11 @@ export default function Home() {
                       lg:px-0
                       w-full
                       lg:w-[850px]'>
+
+
+        <div>
+          <NavBar />
+        </div>
 
 
         {/*-------------------- NOMBRE Y PERFIL --------------------*/}
@@ -44,6 +50,7 @@ export default function Home() {
           </div>
 
         </section>
+
 
         {/*-------------------- SOBRE MI --------------------*/}
 
@@ -78,9 +85,7 @@ export default function Home() {
           
           <TechnologyCards />
         </section>
-
         
-
 
         {/*-------------------- CONTACTO --------------------*/} <div className='divider'></div>
 
