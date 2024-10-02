@@ -35,6 +35,7 @@ const config: Config = {
   },
   plugins: [
     require('daisyui'), [nextui()],
+    
   ],
 };
 export default config;
