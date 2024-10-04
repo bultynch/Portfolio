@@ -81,7 +81,7 @@ export default function Home() {
         {/*-------------------- CONTACTO --------------------*/} <div className='divider'></div>
 
 
-        <section className='my-20 rounded-lg'>
+        <section className='mt-20 mb-10 rounded-lg'>
 
           <Contact />
 
