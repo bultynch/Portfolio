@@ -5,8 +5,8 @@ function TechnologyCards() {
   return (
     <div className='gap-4 lg:gap-y-12 flex flex-wrap items-center justify-center lg:justify-between'>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl border border-texto2 rounded-lg shadow-sm'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1'>Frontend</h1>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Frontend</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='HTML' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg'/>
           <Technology title='CSS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg'/>
@@ -17,18 +17,19 @@ function TechnologyCards() {
         </div>
       </article>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl border border-texto2 rounded-lg shadow-sm'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1'>Backend</h1>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Backend</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='TypeScript' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg'/>
           <Technology title='NodeJS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg'/>
-          <Technology title='MongoDB' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg'/>
           <Technology title='ExpressJS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'/>
+          <Technology title='MongoDB' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg'/>
+          <Technology title='MySQL' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'/>
         </div>
       </article>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl border border-texto2 rounded-lg shadow-sm'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1'>Herramietas</h1>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Herramietas</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='Git' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg'/>
           <Technology title='GitHub' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'/>
@@ -38,8 +39,8 @@ function TechnologyCards() {
         </div>
       </article>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl border border-texto2 rounded-lg shadow-sm'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1'>Aprendiendo</h1>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Aprendiendo</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='Python' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'/>
           <Technology title='Wordpress' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg'/>

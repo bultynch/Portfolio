@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/lib/utils.jsx", "app/lib/utils.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/lib/utils.jsx", "app/lib/utils.js", "app/Pages/api/sendMail.js", "app/Pages/api/sendMail.js"],
   "exclude": ["node_modules"]
 }

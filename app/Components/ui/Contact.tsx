@@ -39,24 +39,24 @@ function Contact() {
   };
 
   return (
-    <div className='px-2 md:px-4 py-4 w-full rounded-lg bg-texto2 flex flex-col md:flex-row items-center justify-center'>
+    <div className='px-2 md:px-4 py-4 w-full rounded-lg bg-texto2 flex flex-col md:flex-row items-center justify-center dark:bg-bg1'>
       <div className='mb-2 w-full h-full flex md:flex-col items-center justify-between md:justify-center'>
-        <h1 className='mb-2 text-3xl text-texto1 font-bold'>Contactame<span className='text-nombre1'>.</span></h1>
+        <h1 className='mb-2 text-3xl text-texto1 font-bold dark:text-texto2'>Contactame<span className='text-nombre1 dark:text-nombre2'>.</span></h1>
         <div className='gap-2 flex flex-row'>
-          <Link href={'https://github.com/bultynch'}><FaLinkedinIn className='w-5 h-5 text-texto1 hover:text-nombre1'/></Link>
-          <Link href={'https://github.com/bultynch'}><FaInstagram className='w-5 h-5 text-texto1 hover:text-nombre1'/></Link>
-          <Link href={'https://github.com/bultynch'}><FaSquareFacebook className='w-5 h-5 text-texto1 hover:text-nombre1'/></Link>
+          <Link href={'https://github.com/bultynch'}><FaLinkedinIn className='w-5 h-5 text-texto1 dark:text-texto2 hover:text-gray-600 dark:hover:text-nombre2'/></Link>
+          <Link href={'https://github.com/bultynch'}><FaInstagram className='w-5 h-5 text-texto1 dark:text-texto2 hover:text-gray-600 dark:hover:text-nombre2'/></Link>
+          <Link href={'https://github.com/bultynch'}><FaSquareFacebook className='w-5 h-5 text-texto1 dark:text-texto2 hover:text-gray-600 dark:hover:text-nombre2'/></Link>
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className='gap-4 w-full flex flex-col justify-center rounded-lg shadow-sm'>
+      <form onSubmit={handleSubmit} className='gap-4 w-full flex flex-col justify-center rounded-lg'>
         <input
           type='text'
           name='name'
           value={formData.name}
           onChange={handleChange}
           placeholder='Nombre'
-          className='px-2 w-full h-8 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none'
+          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none dark:border-bg2 dark:rounded-none dark:text-white'
         />
         <input
           type='email'
@@ -64,18 +64,18 @@ function Contact() {
           value={formData.email}
           onChange={handleChange}
           placeholder='Email'
-          className='px-2 w-full h-8 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none'
+          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none dark:border-bg2 dark:rounded-none dark:text-white'
         />
         <textarea
           name='message'
           value={formData.message}
           onChange={handleChange}
           placeholder='Mensaje'
-          className='p-2 w-full h-40 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none'
+          className='p-2 w-full h-40 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none dark:border-bg2 dark:rounded-none'
         ></textarea>
         <button
           type='submit'
-          className='w-full h-16 flex items-center justify-center text-white text-lg font-semibold bg-nombre1 hover:scale-105 rounded-lg'
+          className='w-full h-20 flex items-center justify-center text-white text-lg font-semibold rounded-lg bg-nombre1 dark:bg-nombre2 hover:text-nombre1 hover:bg-bg1 dark:hover:bg-bg1 dark:hover:text-nombre2 dark:hover:border border-texto2 transition-colors duration-150'
           disabled={loading}
         >
           {loading ? 'Enviando...' : 'Enviar'}
