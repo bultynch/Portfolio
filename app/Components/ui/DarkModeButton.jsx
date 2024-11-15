@@ -38,7 +38,7 @@ function DarkModeButton() {
 
     <button className="swap swap-rotate btn btn-ghost btn-circle text-texto2 dark:hover:text-texto1 dark:text-texto1" onClick={toggleDarkMode}>
 
-      {darkMode === 'dark' ? <MdOutlineWbSunny className='w-6 h-6' /> : <IoMoon className='w-6 h-6' />}
+      {darkMode === 'dark' ? <MdOutlineWbSunny className='w-5 h-5' /> : <IoMoon className='w-5 h-5' />}
 
     </button>
 

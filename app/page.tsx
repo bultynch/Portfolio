@@ -7,7 +7,7 @@ import Image from 'next/image';
 import profile from './Components/Pictures/profilepic3.jpg'
 import Contact from './Components/ui/Contact'
 import DarkModeButton from './Components/ui/DarkModeButton'
-
+import ScrollButton from './Components/ui/ScrollButton'
 
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
         {/*-------------------- NOMBRE Y PERFIL --------------------*/}
 
 
-        <section className='gap-8 w-full h-[60vh] sm:h-[65vh] flex flex-col items-center justify-center'>
+        <section className='gap-8 w-full h-[85vh] flex flex-col items-center justify-center'>
 
           <div className='lg:gap-8 w-full font-bold text-center flex flex-col lg:flex-row lg:items-center lg:justify-start'>
 
@@ -44,6 +44,8 @@ export default function Home() {
             </div>
 
           </div>
+
+          <ScrollButton />
 
         </section>
 
