@@ -14,7 +14,7 @@ function ScrollTopButton() {
     };
 
     const scrollDown = () => {
-        window.scrollTo({ top: window.scrollY + 820, behavior: 'smooth' });
+        window.scrollTo({ top: window.scrollY + 860, behavior: 'smooth' });
     };
 
     useEffect(() => {
@@ -25,9 +25,12 @@ function ScrollTopButton() {
     }, [showScroll]);
 
     return (
-        <button onClick={scrollDown} className={`bottom-2 fixed shadow-sm rounded-sm bg-nombre1 text-texto1 hover:bg-neutral-600 dark:bg-nombre2 dark:text-texto1 dark:hover:bg-texto1 dark:hover:text-nombre2 ${showScroll ? 'block' : 'hidden'} z-50`}>
-            <BiDownArrowAlt className='w-96 h-6' />
-        </button>
+        <div className='w-full'>
+            <button onClick={scrollDown} className={`mr-10 bottom-4 fixed shadow-sm rounded-sm bg-components1 text-texto1 dark:bg-components2 dark:hover:bg-texto1  ${showScroll ? 'block' : 'hidden'} z-50`}>
+                <BiDownArrowAlt className='w-[452px] h-6' />
+            </button>
+        </div>
+        
     );
 }
 

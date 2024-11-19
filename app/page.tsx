@@ -1,13 +1,14 @@
-import Button1 from './Components/ui/Button1'
+import ButtonCV from './Components/ui/ButtonCV'
 import TechnologyCards from './Components/ui/TechnologyCards'
 import SocialLinks from './Components/ui/SocialLinks'
 import ProyectCards from './Components/ui/ProyectCards'
-import { fjallaOne, montserrat, pacifico} from './fonts/fonts';
+import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
 import Image from 'next/image';
 import profile from './Components/Pictures/profilepic3.jpg'
 import Contact from './Components/ui/Contact'
 import DarkModeButton from './Components/ui/DarkModeButton'
 import ScrollButton from './Components/ui/ScrollButton'
+import Emoji from './Components/ui/Emoji'
 
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
         {/*-------------------- NOMBRE Y PERFIL --------------------*/}
 
 
-        <section className='gap-8 w-full h-[85vh] flex flex-col items-center justify-center'>
+        <section className='gap-8 w-full h-[90vh] flex flex-col items-center justify-center'>
 
           <div className='lg:gap-8 w-full font-bold text-center flex flex-col lg:flex-row lg:items-center lg:justify-start'>
 
@@ -34,18 +35,20 @@ export default function Home() {
             </div>
 
             <div className='lg:text-start '>
-              <h1 className={`${montserrat.className} mt-4 mb-2 lg:my-0 text-4xl lg:text-6xl text-nombre1 dark:text-nombre2`}>Francisco Bultynch</h1>
-              <h2 className={`${fjallaOne.className} lg:mt-1 lg:ml-0.5 text-3xl lg:text-4xl dark:text-texto1 `}>Full Stack developer</h2>
+            <h1 className='mt-4 mb-2 lg:my-0 text-5xl lg:text-6xl text-texto2 dark:text-texto1'> Hi, I'm <span className={`${inter.className} antialiased text-nombre1 dark:text-nombre2`}>Francisco</span><Emoji/></h1>
 
-              <div className='lg:ml-1 mt-4 gap-2 flex items-center justify-center lg:justify-start '>
-                <Button1 texto='Download CV' />
+              <h2 className='lg:mt-2 lg:ml-0.5 text-3xl lg:text-4xl dark:text-texto1'>Full Stack developer</h2>
+
+              <div className='lg:ml-1 mt-5 gap-2 flex items-center justify-center lg:justify-start '>
+                <ButtonCV texto='Download CV' />
                 <SocialLinks />
               </div>
             </div>
 
           </div>
 
-          <ScrollButton />
+         
+
 
         </section>
 
@@ -53,23 +56,20 @@ export default function Home() {
         {/*-------------------- SOBRE MI --------------------*/}
 
 
-        <section className='px-2 my-20 w-full flex flex-col text-texto2'>
+        <section className='my-20 gap-10 w-full flex flex-col text-texto2 font-bold'>
 
-          <div className='w-full font-bold'>
-            <h1 className='mb-4 text-3xl dark:text-texto1'>Sobre mi<span className='text-nombre1 dark:text-nombre2'>.</span></h1>
-            <p className='text-md font-semibold dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura en Desarrollo de Software. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.
-            </p>
-          </div>
-
+          <h1 className={`${inter.className} text-3xl dark:text-texto1`}>Sobre mi<span className='text-3xl text-nombre1 dark:text-components2'>.</span></h1>
+          <p className='text-md font-semibold dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura en Desarrollo de Software. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
+          
         </section>
 
 
         {/*-------------------- PROYECTOS --------------------*/} <div className='w-full h-0.5 bg-gray-200 dark:bg-gray-600'></div>
 
 
-        <section className='my-20 gap-8 w-full flex flex-col text-texto2 border-components1'>
+        <section className='my-20 gap-10 w-full flex flex-col text-texto2 border-components1'>
 
-          <h1 className='p-2 text-3xl text-texto2 font-bold dark:text-texto1'>Proyectos<span className='text-nombre1 dark:text-nombre2'>.</span></h1>
+          <h1 className='text-3xl text-texto2 font-bold dark:text-texto1'>Proyectos<span className='text-nombre1 dark:text-components2'>.</span></h1>
           <ProyectCards />
 
         </section>
@@ -80,7 +80,7 @@ export default function Home() {
 
         <section className='my-20 gap-8 w-full flex flex-col items-center justify-center text-texto2 font-semibold'>
           
-          <h1 className='w-full text-3xl font-bold dark:text-texto1'>Tecnologías<span className='text-nombre1 dark:text-nombre2'>.</span></h1>
+          <h1 className='w-full text-3xl font-bold dark:text-texto1'>Mis tecnologías<span className='text-nombre1 dark:text-components2'>.</span></h1>
           <TechnologyCards />
 
         </section>
@@ -89,7 +89,9 @@ export default function Home() {
         {/*-------------------- CONTACTO --------------------*/} <div className='w-full h-0.5 bg-gray-200 dark:bg-gray-600'></div>
 
 
-        <section className='mt-20 mb-10 rounded-lg'>
+        <section className='my-20 gap-10 w-full flex flex-col text-texto2'>
+
+          <h1 className='text-3xl font-bold dark:text-texto1'>Contactame<span className='text-nombre1 dark:text-components2'>.</span></h1>
 
           <Contact />
 

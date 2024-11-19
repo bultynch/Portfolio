@@ -5,7 +5,7 @@ function TechnologyCards() {
   return (
     <div className='gap-4 lg:gap-y-12 flex flex-wrap items-center justify-center lg:justify-between'>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
         <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Frontend</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='HTML' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg'/>
@@ -17,7 +17,7 @@ function TechnologyCards() {
         </div>
       </article>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
         <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Backend</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='TypeScript' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg'/>
@@ -28,7 +28,7 @@ function TechnologyCards() {
         </div>
       </article>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
         <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Herramietas</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='Git' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg'/>
@@ -39,7 +39,7 @@ function TechnologyCards() {
         </div>
       </article>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border border-components1  shadow-sm dark:border-nombre2'>
+      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
         <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Aprendiendo</h1>
         <div className='gap-6 flex flex-wrap items-center justify-center'>
           <Technology title='Python' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'/>
