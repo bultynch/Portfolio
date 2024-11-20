@@ -33,7 +33,7 @@ function DarkModeButton() {
 
   return (
     <button
-      className=" mt-4 swap swap-rotate  text-components1 dark:hover:text-texto1 dark:text-texto1 transform transition-transform duration-300 ease-in-out hover:scale-105"
+      className=" mt-4 swap swap-rotate  text-texto2 dark:hover:text-texto1 dark:text-texto1 transform transition-transform duration-300 ease-in-out hover:scale-105"
       onClick={toggleDarkMode}
     >
       {darkMode === 'dark' ? <MdOutlineWbSunny className="w-5 h-5" /> : <IoMoon className="w-5 h-5" />}

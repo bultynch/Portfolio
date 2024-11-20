@@ -13,13 +13,14 @@ const config: Config = {
   	extend: {
   		colors: {
   			texto1: '#FFFEFE',
-  			nombre1: '#5F021F',
+  			nombre1: '#730039',
   			bg1: '#F9F8F5',
   			components1: '#A1887F',
   			texto2: '#181818',
   			nombre2: '#F04A8A',
 			components2: '#98465f',
   			bg2: '#222029',
+
   			sidebar: {
   				DEFAULT: 'hsl(var(--sidebar-background))',
   				foreground: 'hsl(var(--sidebar-foreground))',

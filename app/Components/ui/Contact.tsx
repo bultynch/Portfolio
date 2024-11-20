@@ -1,7 +1,6 @@
 'use client'
 import React, { useState } from 'react';
-import Link from 'next/link';
-import { FaLinkedin, FaInstagram, FaSquareFacebook } from 'react-icons/fa6';
+
 
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -39,15 +38,8 @@ function Contact() {
   };
 
   return (
-    <div className='w-full rounded-lg bg-red-400 flex flex-col md:flex-row items-center justify-center dark:bg-bg1'>
+    <div className='w-full || flex flex-col items-center justify-center || md:'>
 
-      <div className='mb-2 w-full h-full flex md:flex-col items-center justify-between md:justify-center'>
-        <div className='gap-2 flex flex-row'>
-          <Link href={'https://github.com/bultynch'}><FaLinkedin className='w-5 h-5 text-texto2 dark:text-texto2 hover:text-gray-600 dark:hover:text-components2'/></Link>
-          <Link href={'https://github.com/bultynch'}><FaInstagram className='w-5 h-5 text-texto2 dark:text-texto2 hover:text-gray-600 dark:hover:text-components2'/></Link>
-          <Link href={'https://github.com/bultynch'}><FaSquareFacebook className='w-5 h-5 text-texto2 dark:text-texto2 hover:text-gray-600 dark:hover:text-components2'/></Link>
-        </div>
-      </div>
 
       <form onSubmit={handleSubmit} className='gap-4 w-full flex flex-col justify-center'>
         <input
@@ -56,7 +48,7 @@ function Contact() {
           value={formData.name}
           onChange={handleChange}
           placeholder='Nombre'
-          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none dark:border-bg2 dark:rounded-none dark:text-white'
+          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-texto1 border border-gray-600 shadow-md dark:shadow-gray-600 rounded-md outline-none dark:border-bg2'
         />
         <input
           type='email'
@@ -64,18 +56,18 @@ function Contact() {
           value={formData.email}
           onChange={handleChange}
           placeholder='Email'
-          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none dark:border-bg2 dark:rounded-none dark:text-white'
+          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-texto1 border border-gray-600 shadow-md dark:shadow-gray-600 rounded-md outline-none dark:border-bg2'
         />
         <textarea
           name='message'
           value={formData.message}
           onChange={handleChange}
           placeholder='Mensaje'
-          className='p-2 w-full h-40 flex items-start justify-center text-sm text-black bg-bg1 border-b-2 rounded-lg outline-none dark:border-bg2 dark:rounded-none'
+          className='p-2 w-full h-40 flex items-start justify-center text-sm text-black bg-texto1 border border-gray-600 shadow-md dark:shadow-gray-600 rounded-md outline-none dark:border-bg2'
         ></textarea>
         <button
           type='submit'
-          className='w-full h-20 flex items-center justify-center text-white text-lg font-semibold rounded-lg bg-nombre1 dark:bg-components2 hover:text-nombre1 hover:bg-bg1 dark:hover:bg-bg1 dark:hover:text-components2 dark:hover:border border-texto2 transition-colors duration-150'
+          className='w-full h-16 flex items-center justify-center text-white text-lg font-semibold rounded-lg bg-nombre1 dark:bg-components2 hover:text-nombre1 hover:bg-bg1 dark:hover:bg-bg1 dark:hover:text-components2 dark:hover:border border-texto2 transition-colors duration-150'
           disabled={loading}
         >
           {loading ? 'Enviando...' : 'Enviar'}
