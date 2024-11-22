@@ -1,56 +1,71 @@
-import React from 'react'
-import Technology from './Technology'
+import React from 'react';
+import Technology from './Technology';
 
 function TechnologyCards() {
+  // Datos centralizados
+  const categories = [
+    {
+      title: 'Frontend',
+      technologies: [
+        { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg' },
+        { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg' },
+        { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg' },
+        { name: 'ReactJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg' },
+        { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+      ],
+    },
+    {
+      title: 'Backend',
+      technologies: [
+        { name: 'NodeJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg' },
+        { name: 'ExpressJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
+        { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
+        { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+        { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg' },
+      ],
+    },
+    {
+      title: 'Herramientas',
+      technologies: [
+        { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg' },
+        { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg' },
+        { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg' },
+        { name: 'npm', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg' },
+        { name: 'VSCode', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg' },
+        { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg' },
+      ],
+    },
+    {
+      title: 'Aprendiendo',
+      technologies: [
+        { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
+        { name: 'Django', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg' },
+        { name: 'WordPress', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg' },
+        { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg' },
+        { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
+      ],
+    },
+  ];
+
   return (
-    <div className='gap-4 lg:gap-y-12 flex flex-wrap items-center justify-center lg:justify-between'>
+    <div className="gap-8 font-bold text-texto2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      {categories.map((category) => (
+        <article key={category.title} className="w-full p-4 bg-texto1 text-xl rounded-lg border shadow-sm shadow-texto1 transform hover:scale-105 transition-transform">
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Frontend</h1>
-        <div className='gap-6 flex flex-wrap items-center justify-center'>
-          <Technology title='HTML' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg'/>
-          <Technology title='CSS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg'/>
-          <Technology title='JavaScript' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg'/>
-          <Technology title='ReactJS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'/>
-          <Technology title='Next.js' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg'/>
-          <Technology title='TailwindCSS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'/>
-        </div>
-      </article>
+          <h1 className="mb-4 text-center text-2xl">{category.title}</h1>
+          <div className="gap-6 flex flex-wrap items-center justify-center">
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Backend</h1>
-        <div className='gap-6 flex flex-wrap items-center justify-center'>
-          <Technology title='TypeScript' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg'/>
-          <Technology title='NodeJS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg'/>
-          <Technology title='ExpressJS' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'/>
-          <Technology title='MongoDB' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg'/>
-          <Technology title='MySQL' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'/>
-        </div>
-      </article>
+            {category.technologies.map((tech) => (
+              <Technology key={tech.name} title={tech.name} image={tech.icon} />
+            ))}
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Herramietas</h1>
-        <div className='gap-6 flex flex-wrap items-center justify-center'>
-          <Technology title='Git' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg'/>
-          <Technology title='GitHub' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'/>
-          <Technology title='Docker' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg'/>
-          <Technology title='npm' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg'/>
-          <Technology title='VSCode' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg'/>
-        </div>
-      </article>
+          </div>
 
-      <article className='p-4 w-full lg:w-[400px] text-xl rounded-lg border shadow-md dark:shadow-gray-600 dark:border-gray-600'>
-        <h1 className='mb-4 text-center text-2xl text-nombre1 dark:text-texto1'>Aprendiendo</h1>
-        <div className='gap-6 flex flex-wrap items-center justify-center'>
-          <Technology title='Python' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'/>
-          <Technology title='Wordpress' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg'/>
-          <Technology title='Figma' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg'/>
-          <Technology title='Astro' image='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg'/>
-        </div>
-      </article>
-
+        </article>
+      ))}
     </div>
-  )
+  );
 }
 
-export default TechnologyCards
+export default TechnologyCards;
