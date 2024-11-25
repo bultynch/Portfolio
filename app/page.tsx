@@ -1,15 +1,16 @@
-import ButtonCV from './Components/ui/ButtonCV'
-import TechnologyCards from './Components/ui/TechnologyCards'
-import SocialLinks from './Components/ui/SocialLinks'
-import ProyectCards from './Components/ui/ProyectCards'
+import ButtonCV from './Components/ui/Buttons and links/ButtonCV'
+import TechnologyCards from './Components/ui/Technologies/TechnologyCards'
+import SocialLinks from './Components/ui/Buttons and links/SocialLinks'
+import ProyectCards from './Components/ui/Proyects/ProyectCards'
 import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
 import Image from 'next/image';
 import profile from './Components/Pictures/profilepic3.jpg'
-import Contact from './Components/ui/Contact'
-import DarkModeButton from './Components/ui/DarkModeButton'
-import ScrollButton from './Components/ui/ScrollButton'
+import Contact from './Components/ui/Contact/Contact'
+import Contact2 from './Components/ui/Contact/Contact2';
+import DarkModeButton from './Components/ui/Buttons and links/DarkModeButton'
+import ScrollButton from './Components/ui/Buttons and links/ScrollButton'
 import Emoji from './Components/ui/Emoji'
-import Contact2 from './Components/ui/Contact2';
+
 
 
 export default function Home() {
@@ -82,10 +83,9 @@ export default function Home() {
         {/*-------------------- TECNOLOGÍAS --------------------*/} 
 
 
-        <section className='w-full || gap-20 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || bg-nombre1 dark:bg-components2 || flex flex-col '>
+        <section className='w-full || gap-20 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || flex flex-col '>
           
-        
-          <h2 className={`${inter.className} text-5xl text-texto1 font-bold`}>Mis tecnologías<span className='text-texto2'>.</span></h2>
+          <h2 className={`${inter.className} text-5xl text-texto2 font-bold || dark:text-texto1`}>Mis tecnologías<span className='text-nombre1 dark:text-components2'>.</span></h2>
           <TechnologyCards />
 
         </section>
@@ -94,7 +94,7 @@ export default function Home() {
         {/*-------------------- CONTACTO --------------------*/}
 
 
-        <section className='w-full || gap-8 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || text-texto2 || grid grid-cols-1 lg:grid-cols-2'>
+        <section className='w-full || gap-10 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || text-texto2 || grid grid-cols-1 lg:grid-cols-2'>
 
           <Contact2 />
 

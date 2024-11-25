@@ -38,17 +38,17 @@ function Contact() {
   };
 
   return (
-    <div className='w-full || p-10 || border border-gray-200 rounded-xl shadow-sm dark:border-gray-500 dark:shadow-gray-500 || flex flex-col items-center justify-center'>
+    <div className='w-full || p-10 || border border-gray-200 rounded-xl shadow-sm dark:border-gray-500 || flex flex-col items-center justify-center'>
 
 
-      <form onSubmit={handleSubmit} className='gap-4 w-full flex flex-col justify-center'>
+      <form onSubmit={handleSubmit} className='w-full || gap-4 || flex flex-col justify-center'>
         <input
           type='text'
           name='name'
           value={formData.name}
           onChange={handleChange}
           placeholder='Nombre'
-          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-texto1 border border-gray-200 shadow-sm dark:shadow-gray-600 rounded-md outline-none dark:border-bg2'
+          className='w-full h-10 || px-2 || flex items-start justify-center || text-sm text-black bg-texto1 border border-gray-200 shadow-sm rounded-md outline-none'
         />
         <input
           type='email'
@@ -56,18 +56,18 @@ function Contact() {
           value={formData.email}
           onChange={handleChange}
           placeholder='Email'
-          className='px-2 w-full h-10 flex items-start justify-center text-sm text-black bg-texto1 border border-gray-200 shadow-sm dark:shadow-gray-600 rounded-md outline-none dark:border-bg2'
+          className='w-full h-10 || px-2 || flex items-start justify-center || text-sm text-black bg-texto1 border border-gray-200 shadow-sm rounded-md outline-none'
         />
         <textarea
           name='message'
           value={formData.message}
           onChange={handleChange}
           placeholder='Mensaje'
-          className='p-2 w-full h-40 flex items-start justify-center text-sm text-black bg-texto1 border border-gray-200 shadow-sm dark:shadow-gray-600 rounded-md outline-none dark:border-bg2'
+          className='w-full h-40 || p-2 || flex items-start justify-center || text-sm text-black bg-texto1 border border-gray-200 shadow-sm rounded-md outline-none'
         ></textarea>
         <button
           type='submit'
-          className='w-full h-16 || text-white text-lg font-semibold rounded-lg bg-nombre1 || flex items-center justify-center || dark:bg-components2 hover:text-nombre1 hover:bg-bg1 dark:hover:bg-bg1 dark:hover:text-components2 dark:hover:border  transition-colors duration-150'
+          className='w-full h-16 || text-white text-lg font-semibold rounded-lg bg-nombre1 border || flex items-center justify-center || hover:border-nombre1 hover:text-nombre1 hover:bg-bg1 dark:bg-components2 dark:hover:bg-bg1 dark:hover:text-components2 dark:border-components2 dark:hover:border-components2 || transition-colors duration-150'
           disabled={loading}
         >
           {loading ? 'Enviando...' : 'Enviar'}

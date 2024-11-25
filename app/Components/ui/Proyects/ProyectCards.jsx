@@ -65,7 +65,7 @@ function ProyectCards() {
 
       {/*-------------------- PROYECTO 2 --------------------*/} 
 
-      <article className="mb-10 w-full md:h-72 flex flex-col md:flex-row rounded-lg border bg-bg1 shadow-md dark:bg-bg2 dark:shadow-gray-600 dark:border-gray-600">
+      <article className="w-full md:h-72 flex flex-col md:flex-row rounded-lg border bg-bg1 shadow-md dark:bg-bg2 dark:shadow-gray-600 dark:border-gray-600">
 
         <div className='w-full md:max-w-128 h-60 md:h-auto rounded-t-lg'>
           <div className='w-full h-full bg-yellow-400 rounded-t-lg md:rounded-bl-lg md:rounded-tr-none'></div>
