@@ -1,7 +1,6 @@
 import React from 'react'
 
-function ProyectTechnology() {
-
+function ProyectTechnologyCards() {
     const categories = [
 
         { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg' },
@@ -24,33 +23,9 @@ function ProyectTechnology() {
 
     ]
   return (
-    <div className='gap-0 lg:gap-5 || grid grid-cols-1 lg:grid-cols-2'>
-      <div className='w-auto h-144 || bg-red-500 rounded-lg'></div>
-
-      <div className='w-auto h-144 || p-5 || border-2 border-black rounded-lg font-bold'>
-
-        <div className=''>
-          <h2 className='mb-4 || text-3xl'>Titulo proyecto</h2>
-          <p className='mb-4 || font-semibold text-xl'>Descriptcion proyecto asdas da sd ad a d asd a sd</p>
-        </div>
-
-        <div className='gap-4 || mb-4 || flex items-start'>
-          <h3>tech 1</h3>
-          <h3>tech 2</h3>
-          <h3>tech 3</h3>
-        </div>
-
-        <div className='gap-4 || flex items-start'>
-          <button className='bg-red-400 px-2'>demo</button>
-          <button className='bg-green-400 px-2'>github</button>
-        </div>
-
-        
-
-      </div>
-
-    </div>
+    
+    <div>ProyectTechnologyCards</div>
   )
 }
 
-export default ProyectTechnology
+export default ProyectTechnologyCards

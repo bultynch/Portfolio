@@ -38,7 +38,7 @@ function Contact() {
   };
 
   return (
-    <div className='w-full || p-10 || border border-gray-200 rounded-xl shadow-sm dark:border-gray-500 || flex flex-col items-center justify-center'>
+    <div className='w-full || p-4 || border border-gray-200 rounded-xl shadow-sm dark:border-gray-500 || flex flex-col items-center justify-center'>
 
 
       <form onSubmit={handleSubmit} className='w-full || gap-4 || flex flex-col justify-center'>
