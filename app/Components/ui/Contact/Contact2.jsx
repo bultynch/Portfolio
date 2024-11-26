@@ -8,7 +8,7 @@ function Contact2() {
 
         <div className='text-center font-bold text-texto1'>
             <h1 className='mb-8 || text-5xl dark:text-texto1'>Contactame<span className='text-texto2'>.</span></h1>
-            <p className='text-xl dark:text-texto1'>Tenés preguntas o querés trabajar conmigo? Enviame un mensaje!</p>
+            <p className='text-xl dark:text-texto1'>¿Tenés preguntas o querés trabajar conmigo? Enviame un mensaje!</p>
         </div>
 
         <div className='gap-2 || mt-8 ml-4 || flex flex-row items-center justify-start text-texto1 dark:text-texto1'>

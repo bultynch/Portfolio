@@ -2,14 +2,14 @@ import ButtonCV from './Components/ui/Buttons and links/ButtonCV'
 import TechnologyCards from './Components/ui/Technologies/TechnologyCards'
 import SocialLinks from './Components/ui/Buttons and links/SocialLinks'
 import ProyectCards from './Components/ui/Proyects/ProyectCards'
+import ProyectTechnology from './Components/ui/Proyects/ProyectTechnology'
 import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
 import Image from 'next/image';
 import profile from './Components/Pictures/profilepic3.jpg'
 import Contact from './Components/ui/Contact/Contact'
 import Contact2 from './Components/ui/Contact/Contact2';
 import DarkModeButton from './Components/ui/Buttons and links/DarkModeButton'
-import ScrollButton from './Components/ui/Buttons and links/ScrollButton'
-import Emoji from './Components/ui/Emoji'
+import Emoji from './Components/ui/Others/Emoji'
 
 
 
@@ -29,7 +29,7 @@ export default function Home() {
         {/*-------------------- NOMBRE Y PERFIL --------------------*/}
 
 
-        <section className='w-full h-[91vh] || gap-8 mb-12 px-10 md:px-20 lg:px-30 2xl:px-60 py-40 || flex flex-col items-center justify-center'>
+        <section className='w-full h-[85vh] || gap-8 || mb-24 || px-10 md:px-20 lg:px-30 2xl:px-60 py-40 || flex flex-col items-center justify-center'>
 
           <div className='w-full || lg:gap-8 || font-bold text-center || flex flex-col lg:flex-row lg:items-center lg:justify-start'>
 
@@ -62,8 +62,8 @@ export default function Home() {
 
         <section className='w-full || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || bg-nombre1 dark:bg-components2 text-texto1 font-bold || flex flex-col justify-center '>
 
-          <h2 className={`${inter.className} mb-20 text-5xl text-texto1 font-bold`}>Sobre mi<span className='text-texto2'>.</span></h2>
-          <p className='text-lg font-semibold dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura Universitaria en Programación. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
+          <h2 className={`${inter.className} mb-20 || text-5xl text-texto1 font-bold`}>Sobre mi<span className='text-texto2'>.</span></h2>
+          <p className='text-lg font-semibold || dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura Universitaria en Programación. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
 
           
         </section>
@@ -74,7 +74,9 @@ export default function Home() {
 
         <section className='w-full || gap-20 || py-20 md:py-40 px-10  md:px-20 lg:px-30 2xl:px-60 || text-texto2 || flex flex-col '>
 
-          <h2 className={`${inter.className} text-5xl text-texto2 dark:text-texto1 font-bold`}>Proyectos<span className='text-nombre1 dark:text-components2'>.</span></h2>
+          <h2 className={`${inter.className} text-5xl text-texto2 || dark:text-texto1 font-bold`}>Proyectos<span className='text-nombre1 dark:text-components2'>.</span></h2>
+
+          <ProyectTechnology />
           <ProyectCards />
 
         </section>
