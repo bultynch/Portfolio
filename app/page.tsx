@@ -1,16 +1,16 @@
-import ButtonCV from './Components/ui/Buttons and links/ButtonCV'
-import TechnologyCards from './Components/ui/Technologies/TechnologyCards'
-import SocialLinks from './Components/ui/Buttons and links/SocialLinks'
-import PyCards from './Components/ui/Proyects/PyCards'
-import PyTech from './Components/ui/Proyects/PyTech'
-import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
+import DarkModeButton from './Components/ui/Buttons and links/DarkModeButton';
+import profile from './Components/Pictures/profilepic3.jpg';
 import Image from 'next/image';
-import profile from './Components/Pictures/profilepic3.jpg'
-import Contact from './Components/ui/Contact/Contact'
+import Emoji from './Components/ui/Others/Emoji';
+import ButtonCV from './Components/ui/Buttons and links/ButtonCV';
+import SocialLinks from './Components/ui/Buttons and links/SocialLinks';
+import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
+import PyCards from './Components/ui/Proyects/PyCards';
+import PyTech from './Components/ui/Proyects/PyTech';
+import PyTechReverse from './Components/ui/Proyects/PyTechReverse';
+import TechnologyCards from './Components/ui/Technologies/TechnologyCards';
+import Contact from './Components/ui/Contact/Contact';
 import Contact2 from './Components/ui/Contact/Contact2';
-import DarkModeButton from './Components/ui/Buttons and links/DarkModeButton'
-import Emoji from './Components/ui/Others/Emoji'
-
 
 
 export default function Home() {
@@ -51,21 +51,17 @@ export default function Home() {
 
           </div>
 
-         
-
-
         </section>
 
 
         {/*-------------------- SOBRE MI --------------------*/}
 
 
-        <section className='w-full || py-20 lg:py-40 px-20 || bg-nombre1 dark:bg-components2 text-texto1 font-bold || '>
+        <section className='w-full || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || bg-nombre1 dark:bg-components2 text-texto1 font-bold || '>
 
-          <h2 className={`${inter.className} max-w-[1300px] mb-14 || text-5xl text-texto1 font-bold`}>SOBRE MI<span className='text-texto2'>.</span></h2>
-          <p className='max-w-[1300px] text-2xl font-medium || dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura Universitaria en Programación. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
+          <h2 className={`${inter.className} mb-14 || text-5xl text-texto1 font-bold`}>SOBRE MI<span className='text-texto2'>.</span></h2>
+          <p className=' text-2xl font-medium || dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura Universitaria en Programación. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
 
-          
         </section>
 
 
@@ -77,6 +73,9 @@ export default function Home() {
           <h2 className={`${inter.className} text-5xl text-texto2 || dark:text-texto1 font-bold`}>PROYECTOS<span className='text-nombre1 dark:text-components2'>.</span></h2>
 
           <PyTech />
+          <PyTechReverse />
+          <PyTech />
+          <PyTechReverse />
           <PyCards />
 
         </section>
@@ -99,7 +98,6 @@ export default function Home() {
         <section className='w-full || gap-10 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || text-texto2 || grid grid-cols-1 lg:grid-cols-2'>
 
           <Contact2 />
-
           <Contact />
 
         </section>
