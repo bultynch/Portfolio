@@ -7,7 +7,7 @@ import SocialLinks from './Components/ui/Buttons and links/SocialLinks';
 import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
 import PyComponent from './Components/ui/Proyects/PyComponent';
 import PyComponentReverse from './Components/ui/Proyects/PyComponentReverse';
-import TechnologyCards from './Components/ui/Technologies/TechnologyCards';
+import TechnologyCards from './Components/ui/Technologies/TechCards';
 import Contact from './Components/ui/Contact/Contact';
 import Contact2 from './Components/ui/Contact/Contact2';
 

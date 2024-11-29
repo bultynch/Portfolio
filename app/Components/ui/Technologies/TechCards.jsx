@@ -1,5 +1,5 @@
 import React from 'react';
-import Technology from './Technology';
+import Technology from './Tech';
 
 function TechnologyCards() {
 
