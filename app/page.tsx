@@ -5,9 +5,8 @@ import Emoji from './Components/ui/Others/Emoji';
 import ButtonCV from './Components/ui/Buttons and links/ButtonCV';
 import SocialLinks from './Components/ui/Buttons and links/SocialLinks';
 import {  bunge, ewert, fascinatein, fjallaone, honk, inter, lobster, montserrat, notable, pacifico, saira1, sancreek} from './fonts';
-import PyCards from './Components/ui/Proyects/PyCards';
-import PyTech from './Components/ui/Proyects/PyTech';
-import PyTechReverse from './Components/ui/Proyects/PyTechReverse';
+import PyComponent from './Components/ui/Proyects/PyComponent';
+import PyComponentReverse from './Components/ui/Proyects/PyComponentReverse';
 import TechnologyCards from './Components/ui/Technologies/TechnologyCards';
 import Contact from './Components/ui/Contact/Contact';
 import Contact2 from './Components/ui/Contact/Contact2';
@@ -72,11 +71,10 @@ export default function Home() {
 
           <h2 className={`${inter.className} text-5xl text-texto2 || dark:text-texto1 font-bold`}>PROYECTOS<span className='text-nombre1 dark:text-components2'>.</span></h2>
 
-          <PyTech />
-          <PyTechReverse />
-          <PyTech />
-          <PyTechReverse />
-          <PyCards />
+          <PyComponent />
+          <PyComponentReverse />
+          <PyComponent />
+          <PyComponentReverse />
 
         </section>
 
