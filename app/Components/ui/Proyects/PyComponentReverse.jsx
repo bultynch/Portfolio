@@ -1,53 +1,52 @@
-import React from 'react'
-import Image from 'next/image';
+import React from 'react';
+import Framework from './Framework';
+import GithubButton from '../Buttons and links/GithubButton';
+import DemoButton from '../Buttons and links/DemoButton';
 
-function ProyectTechnology() {
+function PyComponentReverse({title, description}) {
+  const categories = {
+    p2: [
+      { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
+      { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+      { name: 'Motion', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg' },
+    ],
+
+    p4: [
+      { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg' },
+      { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+      { name: 'ExpressJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
+      { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+      { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
+    ],
+  };
 
   return (
-    <div className='|| grid grid-cols-1 lg:grid-cols-[45%_55%]'>
+    <div className="grid grid-cols-1 lg:grid-cols-[45%_55%]">
+      
+      <div className="w-auto h-[400px] || pt-5 pr-10 || font-bold || dark:text-white">
 
-      <div className='w-auto h-[400px] || py-5 px-10 || border-2 border-black rounded-lg font-bold'>
-
-        <div className=''>
-          <h2 className='mb-4 || text-3xl'>Titulo proyecto</h2>
-          <p className='mb-4 || font-semibold text-xl'>Descriptcion proyecto asdas da sd ad a d asd a sd</p>
+        <div>
+          <h2 className="mb-4 || text-3xl">{title}</h2>
+          <p className="mb-4 || font-normal text-xl">{description}</p>
         </div>
 
-        <div className="gap-2 flex items-center justify-start ">
-
-          <div className='gap-2 py-1 px-2 flex items-center bg-gray-200 rounded-full'>
-            <Image src={'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg'} alt='nextjs' width={17} height={17}/>
-            <h1 className='text-[11px] font-semibold'>Next.js</h1>
-          </div>
-
-          <div className='gap-2 py-1 px-2 flex items-center bg-gray-200 rounded-full'>
-            <Image src={'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'} alt='tw' width={17} height={17}/>
-            <h1 className='text-[11px] font-semibold'>TailwindCSS</h1>
-          </div>
-
-          <div className='gap-2 py-1 px-2 flex items-center bg-gray-200 rounded-full'>
-            <Image src={'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'} alt='express' width={17} height={17}/>
-            <h1 className='text-[11px] font-semibold'>ExpressJS</h1>
-          </div>
-
-          <div className='gap-2 py-1 px-2 flex items-center bg-gray-200 rounded-full'>
-            <Image src={'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'} alt='mysql' width={17} height={17}/>
-            <h1 className='text-[11px] font-semibold'>MySQL</h1>
-          </div>
-
+        <div className="gap-2 || text-black || flex items-center justify-start">
+          {categories.p2.map((category, index) => (
+            <Framework key={index} name={category.name} icon={category.icon} />
+          ))}
         </div>
 
-        <div className='gap-4 || flex items-start'>
-          <button className='bg-red-400 px-2'>demo</button>
-          <button className='bg-green-400 px-2'>github</button>
+        <div className="gap-4 || mt-10 || flex items-start">
+          <DemoButton linkDemo={''} />
+          <GithubButton linkRepo={'https://github.com/bultynch/Project-Computer-Store'} />
         </div>
 
       </div>
 
-      <div className='w-auto h-[400px] || bg-red-500 rounded-lg'></div>
+      <div className="w-auto h-[400px] || bg-red-500 rounded-lg order-first lg:order-last"></div>
 
     </div>
-  )
+  );
 }
 
-export default ProyectTechnology
+export default PyComponentReverse;

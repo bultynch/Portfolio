@@ -1,67 +1,50 @@
 import React from 'react';
-import PyTech from './PyTech';
+import Framework from './Framework';
+import GithubButton from '../Buttons and links/GithubButton';
+import DemoButton from '../Buttons and links/DemoButton';
 
-function ProyectTechnology() {
-  const categories = [
-    {
-      p1: [
-        { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg' },
-        { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
-        { name: 'ExpressJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
-        { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
-      ],
-    },
-    {
-      p2: [
-        { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
-        { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
-      ],
-    },
-    {
-      p3: [
-        { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
-        { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
-      ],
-    },
-    {
-      p4: [
-        { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
-        { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
-      ],
-    },
-  ];
-
-  // Selecciona una categoría dinámica (por ejemplo, p1)
-  const selectedCategory = categories[0].p1;
+function PyComponent({title, description}) {
+  const categories = {
+    p1: [
+      { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg' },
+      { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+      { name: 'ExpressJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
+      { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+    ],
+    p3: [
+      { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg' },
+      { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+      { name: 'ExpressJS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg' },
+      { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+      { name: 'Astro', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/astro/astro-original.svg' },
+    ],
+  };
 
   return (
-    <div className="|| grid grid-cols-1 lg:grid-cols-[55%_45%]">
+    <div className="grid grid-cols-1 lg:grid-cols-[55%_45%]">
 
       <div className="w-auto h-[400px] || bg-red-500 rounded-lg"></div>
-
-      <div className="w-auto h-[400px] || py-5 px-10 || border-2 border-black rounded-lg font-bold">
+      <div className="w-auto h-[400px] || pt-5 lg:pl-5 xl:pl-10 || font-bold dark:text-white">
 
         <div>
-          <h2 className="mb-4 || text-3xl">Titulo proyecto</h2>
-          <p className="mb-4 || font-semibold text-xl">Descripción del proyecto</p>
+          <h2 className="mb-4 || text-3xl">{title}</h2>
+          <p className="mb-4 || font-normal text-xl">{description}</p>
         </div>
 
-        {/* Itera sobre la categoría seleccionada */}
-        <div className="gap-2 flex items-center justify-start">
-          {selectedCategory.map((tech, index) => (
-            <PyTech key={index} name={tech.name} icon={tech.icon} />
+        <div className="gap-2 || text-black || flex items-center justify-start">
+          {categories.p1.map((category, index) => (
+            <Framework key={index} name={category.name} icon={category.icon} />
           ))}
         </div>
 
-        <div className="gap-4 || flex items-start">
-          <button className="bg-red-400 px-2">Demo</button>
-          <button className="bg-green-400 px-2">GitHub</button>
+        <div className="gap-4 || mt-10 || flex items-start">
+          <DemoButton linkDemo={''} />
+          <GithubButton linkRepo={'https://github.com/bultynch/Project-Computer-Store'} />
         </div>
 
       </div>
-
     </div>
   );
 }
 
-export default ProyectTechnology;
+export default PyComponent;

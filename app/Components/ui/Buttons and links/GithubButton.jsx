@@ -1,12 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
+import { FaGithub } from "react-icons/fa";
+
 
 function GithubButton({linkRepo}) {
   return (
     <div className='flex items-center justify-center'>
-        <Link href={LinkRepo}>
-            <button className='gap-1.5 p-1.5 flex items-center bg-[#2b3137] text-texto1 text-sm font-semibold rounded-lg shadow-sm border border-[#24292e] transform transition-transform duration-300 ease-in-out hover:scale-105'><FaGithub className='w-4 h-4 mb-0.5'/>Código</button>
-        </Link>
+
+      <Link href={linkRepo}>
+        <button className='gap-2 || p-2 || flex items-center || bg-[#2b3137] text-texto1 text-md font-semibold rounded-lg border border-[#24292e] || transform transition-transform duration-200 ease-in-out hover:scale-105 || dark:border-white'><FaGithub className='w-4 h-4 mb-0.5'/>Código</button>
+      </Link>
+
     </div>
   )
 }

@@ -4,10 +4,10 @@ import { FaLinkedin, FaInstagram, FaSquareFacebook } from 'react-icons/fa6';
 
 function Contact2() {
   return (
-    <div className='p-10 || bg-nombre1 border border-gray-200 rounded-xl shadow-sm || dark:bg-components2 dark:border-gray-500 || flex flex-col items-center justify-center'>
+    <div className='p-10 || bg-nombre1 border border-gray-200 rounded-xl shadow-sm || dark:bg-components2 dark:border-none || flex flex-col items-center justify-center'>
 
         <div className='text-center font-bold text-texto1'>
-            <h1 className='mb-8 || text-5xl dark:text-texto1'>CONTACTAME<span className='text-texto2'>.</span></h1>
+            <h1 className='mb-8 || text-4xl lg:text-5xl dark:text-texto1'>CONTACTAME<span className='text-texto2'>.</span></h1>
             <p className='text-xl dark:text-texto1'>¿Tenés preguntas o querés trabajar conmigo? Enviame un mensaje!</p>
         </div>
 
