@@ -24,7 +24,7 @@ function PyComponent({title, description}) {
     <div className="grid grid-cols-1 lg:grid-cols-[55%_45%]">
 
       <div className="w-auto h-[400px] || bg-red-500 rounded-lg"></div>
-      <div className="w-auto h-[400px] || pt-5 lg:pl-5 xl:pl-10 || font-bold dark:text-white">
+      <div className="w-auto h-[300px] || pt-5 lg:pl-5 xl:pl-10 || font-bold dark:text-white">
 
         <div>
           <h2 className="mb-4 || text-3xl">{title}</h2>

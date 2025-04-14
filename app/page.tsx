@@ -52,19 +52,17 @@ export default function Home() {
 
         </section>
 
+        {/*-------------------- TECNOLOGÍAS --------------------*/} 
 
-        {/*-------------------- SOBRE MI --------------------*/}
 
-
-        <section className='w-full || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || bg-nombre1 dark:bg-components2 text-texto1 font-bold || '>
-
-          <h2 className={`${inter.className} mb-14 || text-4xl lg:text-5xl text-texto1 font-bold`}>SOBRE MI<span className='text-texto2'>.</span></h2>
-          <p className=' text-xl lg:text-2xl font-medium || dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura Universitaria en Programación. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
+        <section className='w-full || gap-20 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || flex flex-col || bg-nombre1'>
+          
+          <h2 className={`${inter.className} text-4xl lg:text-5xl text-texto1 font-bold || dark:text-texto1`}>MIS TECNOLOGÍAS<span className='text-texto2 s'>.</span></h2>
+          <TechnologyCards />
 
         </section>
 
-
-        {/*-------------------- PROYECTOS --------------------*/} 
+        {/*-------------------- PROYECTOS --------------------*/} s
 
 
         <section className='w-full || gap-20 || py-20 md:py-40 px-10  md:px-20 lg:px-30 2xl:px-60 || text-texto2 || flex flex-col '>
@@ -77,16 +75,16 @@ export default function Home() {
         </section>
 
 
-        {/*-------------------- TECNOLOGÍAS --------------------*/} 
+        {/*-------------------- SOBRE MI --------------------*/}
 
 
-        <section className='w-full || gap-20 || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || flex flex-col '>
-          
-          <h2 className={`${inter.className} text-4xl lg:text-5xl text-texto2 font-bold || dark:text-texto1`}>MIS TECNOLOGÍAS<span className='text-nombre1 dark:text-components2'>.</span></h2>
-          <TechnologyCards />
+        <section className='w-full || py-20 md:py-40 px-10 md:px-20 lg:px-30 2xl:px-60 || bg-nombre1 dark:bg-components2 text-texto1 font-bold || '>
+
+          <h2 className={`${inter.className} mb-14 || text-4xl lg:text-5xl text-texto1 font-bold`}>SOBRE MI<span className='text-texto2'>.</span></h2>
+          <p className=' text-xl lg:text-2xl font-medium || dark:text-texto1'>Soy un estudiante autodidacta de desarrollo web y actualmente curso la Tecnicatura Universitaria en Programación. Durante más de un año, he estado aprendiendo y trabajando en proyectos con React y Next.js, lo que me ha permitido mejorar mis habilidades en el frontend. Actualmente, estoy estudiando Node.js, Express y MySQL para ampliar mis conocimientos en el backend.</p>
 
         </section>
-        
+
 
         {/*-------------------- CONTACTO --------------------*/}
 

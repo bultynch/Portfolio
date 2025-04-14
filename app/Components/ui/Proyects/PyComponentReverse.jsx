@@ -23,7 +23,7 @@ function PyComponentReverse({title, description}) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[45%_55%]">
       
-      <div className="w-auto h-[400px] || pt-5 pr-10 || font-bold || dark:text-white">
+      <div className="w-auto h-[300px] || pt-5 pr-10 || font-bold || dark:text-white">
 
         <div>
           <h2 className="mb-4 || text-3xl">{title}</h2>
